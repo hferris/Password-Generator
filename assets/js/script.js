@@ -149,50 +149,33 @@ function validateInput(question) {
 
 function generatePassword(len, lowercase, uppercase, numbers, specialChar) {
   console.log(len);
-  var password = [];
-  var i = 1;
+  var password = "";
+  var i = 0;
 
   while(i < len) {
-    console.log(i);
     
     if (lowercase) {
      var s = getRandomItem(lowerCasedCharacters);
-     console.log("PW b4: " + password);
-     console.log("low: " + s);
-      password.push(s);
+      password += s;
       i++;
-      console.log("i: " + i);
-      console.log("PW after: " + password);
     }
     if (uppercase) {
       var s = getRandomItem(upperCasedCharacters);
-      console.log("PW b4: " + password);
-      console.log("up: " + s);
-      password.push(s);
+       password += s;
        i++;
-       console.log("i: " + i);
-       console.log("PW after: " + password);
      }
      if (numbers) {
       var s = getRandomItem(numericCharacters);
-      console.log("PW b4: " + password);
-      console.log("num: " + s);
-      password.push(s);
+       password += s;
        i++;
-       console.log("i: " + i);
-       console.log("PW after: " + password);
      }
      if (specialChar) {
        var s = getRandomItem(specialCharacters);
-       console.log("PW b4: " + password);
-       console.log("spec: " + s);
-       password.push(s);
+        password += s;
         i++;
-        console.log("i: " + i);
-        console.log("PW after: " + password);
       }
   }
-  return password;
+  return password.slice(0, len);
 }
 // Retrieve a random item from the provided array
 function getRandomItem(arr) {
