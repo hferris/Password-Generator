@@ -1,6 +1,7 @@
 # My Password Generator 
 # Here is the screenshot below: 
 ![Alt text](./assets/imgs/screen-shot.png?raw=true "Screenshot")
+![Alt text](./assets/imgs/screen-shot2.png?raw=true "Screenshot")
 # Check it out here: https://hferris.github.io/Password-Generator/
 
 <img src="https://img.shields.io/badge/License-IPL%201.0-blue.svg"></img>
